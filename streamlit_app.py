@@ -9,7 +9,7 @@ st.title("Cloud Image Classification")
 
 st.write("Predict the Cloud that is being represented in the image.")
 
-model = load_model("C:/Users/tamar/Downloads/clouds.h5",custom_objects={'KerasLayer':hub.KerasLayer})
+model = load_model("clouds.h5",custom_objects={'KerasLayer':hub.KerasLayer})
 labels = {
     0: 'Altocumulus',
     1: 'Altostratus',
